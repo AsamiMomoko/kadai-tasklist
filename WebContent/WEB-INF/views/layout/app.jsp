@@ -4,7 +4,7 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>Insert title here</title>
+        <title>タスク管理アプリケーション</title>
     </head>
     <body>
         <div id="wrapper">
