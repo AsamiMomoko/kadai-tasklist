@@ -50,3 +50,7 @@ td {
     font-weight: bold;
     background-color: pink;
 }
+
+#pagination {
+    margin-top: 20px;
+}
