@@ -3,11 +3,11 @@ package models.validators;
 import java.util.ArrayList;
 import java.util.List;
 
-import models.Task;
+import models.Tasks;
 
 public class TaskValidator {
 
-    public static List<String> validate(Task t) {
+    public static List<String> validate(Tasks t) {
 
         List<String> errors = new ArrayList<String>();
 
@@ -21,7 +21,7 @@ public class TaskValidator {
 
     private static String validateContent(String content) {
         if (content == null || content.equals("")) {
-            return "メッセージを入力してください。";
+            return "タスク内容を入力してください。";
         }
 
         return "";

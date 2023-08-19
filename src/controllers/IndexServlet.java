@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import models.Task;
+import models.Tasks;
 import utils.DBUtil;
 
 /**
@@ -42,7 +42,7 @@ public class IndexServlet extends HttpServlet {
         } catch (NumberFormatException e) {
         }
 
-        List<Task> tasks = em.createNamedQuery("getAllTasks", Task.class)
+        List<Tasks> tasks = em.createNamedQuery("getAllTasks", Tasks.class)
                 .setFirstResult(10 * (page - 1))
                 .setMaxResults(10)
                 .getResultList();
